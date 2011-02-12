@@ -1,8 +1,9 @@
 node basenode {
-    include "sudo"
-    include "git::client"
-    include "vim"
     include "build-essential"
+    include "git::client"
+    include "ssh::all"
+    include "sudo"
+    include "vim"
 }
 
 node "default" inherits basenode { }
