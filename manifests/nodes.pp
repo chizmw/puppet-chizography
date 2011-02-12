@@ -10,3 +10,7 @@ node basenode {
 }
 
 node "default" inherits basenode { }
+
+node "chisel-mint.lan" inherits basenode {
+    include vim::gui
+}

@@ -5,3 +5,10 @@ class vim {
         require => Package["vim-tiny"],
     }
 }
+
+class vim::gui {
+    package { vim-gtk:
+        ensure  => latest,
+        require => Package["vim"],
+    }
+}
