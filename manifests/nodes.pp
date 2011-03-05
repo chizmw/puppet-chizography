@@ -3,6 +3,7 @@ node basenode {
 
     include build-essential
     include curl
+    include elinks
     include git::client
     include ssh::all
     include sudo
