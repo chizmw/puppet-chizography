@@ -1,0 +1,6 @@
+[submodule "modules/postgresql"]
+	path = modules/postgresql
+	url = git@github.com:chiselwright/puppet-postgresql.git
+[submodule "modules/augeas"]
+	path = modules/augeas
+	url = https://github.com/camptocamp/puppet-augeas.git

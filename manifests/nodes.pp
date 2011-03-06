@@ -13,5 +13,6 @@ node basenode {
 node "default" inherits basenode { }
 
 node "chisel-mint.lan" inherits basenode {
+    include app-cleavages
     include vim::gui
 }
