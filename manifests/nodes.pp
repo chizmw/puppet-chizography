@@ -8,6 +8,12 @@ node basenode {
     include ssh::all
     include sudo
     include vim
+
+    case $lsbdistid {
+        'LinuxMint': {
+            include vim::gui
+        }
+    }
 }
 
 node "default" inherits basenode { }
@@ -16,5 +22,4 @@ node "chisel-mint.lan" inherits basenode {
     include app-cleavages
     include app-parley
 
-    include vim::gui
 }
