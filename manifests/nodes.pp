@@ -19,7 +19,10 @@ node basenode {
 node "default" inherits basenode { }
 
 node "chisel-mint.lan" inherits basenode {
+    include app-bitlit-todo
     include app-cleavages
     include app-parley
+}
+node "chisel-mint" inherits "chisel-mint.lan" { }
 
 }
