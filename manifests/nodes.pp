@@ -25,4 +25,6 @@ node "chisel-mint.lan" inherits basenode {
 }
 node "chisel-mint" inherits "chisel-mint.lan" { }
 
+node "overlord" inherits basenode {
+    include app-bitlit-todo
 }
