@@ -27,4 +27,10 @@ node "chisel-mint" inherits "chisel-mint.lan" { }
 
 node "overlord" inherits basenode {
     include app-bitlit-todo
+    include presentation-tools
+}
+
+node "zergling" inherits basenode {
+    include app-bitlit-todo
+    include presentation-tools
 }
