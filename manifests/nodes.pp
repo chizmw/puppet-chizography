@@ -15,6 +15,13 @@ node basenode {
             include vim::gui
         }
     }
+
+    # all Ubuntu machines get aptitude installed
+    case $lsbdistid {
+        'Ubuntu': {
+            include aptitude
+        }
+    }
 }
 
 node "default" inherits basenode { }
