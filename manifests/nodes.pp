@@ -5,6 +5,7 @@ node basenode {
     include curl
     include elinks
     include git::client
+    include screen
     include ssh::all
     include sudo
     include vim
