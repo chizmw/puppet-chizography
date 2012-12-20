@@ -6,6 +6,7 @@ node basenode {
     include elinks
     include git::client
     include libexpat-dev
+    include libssl-dev
     include ntp
     include screen
     include ssh::all
