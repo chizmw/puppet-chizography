@@ -1,9 +1,0 @@
-# /etc/sudoers
-Defaults        env_reset
-
-root	ALL=(ALL) ALL
-%sudo   ALL=(ALL) ALL
-%admin  ALL=(ALL) ALL
-
-# puppet fragments follow
-Defaults env_keep+="SSH_AUTH_SOCK"

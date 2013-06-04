@@ -1,0 +1,11 @@
+  350  cd /etc/
+  351  sudo aptitude remove puppetmaster puppet && sudo rm -rf /etc/puppet*
+  353  sudo aptitude install puppetmaster puppt
+  366  cd ~/development/puppet-chizography/
+  367  sudo cp -R /etc/puppet/* .
+  369  sudo chown -R chisel: .
+  376  cd /etc/
+  378  mv puppet/ puppet-aptitude-install
+  380  sudo ln -s ~/development/puppet-chizography puppet
+  382  cd puppet
+  384  history >> README.setup.droplet
