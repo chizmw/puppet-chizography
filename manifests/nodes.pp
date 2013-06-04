@@ -7,6 +7,7 @@ node basenode {
         }
     }
 
+    include bash-completion
 
 }
 
