@@ -12,6 +12,7 @@ node basenode {
     include screen
     include ssh::all
     include sudo
+    include vim
 
 }
 
