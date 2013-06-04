@@ -9,6 +9,7 @@ node basenode {
 
     include bash-completion
     include ntp
+    include screen
 
 }
 
