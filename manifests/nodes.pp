@@ -11,6 +11,7 @@ node basenode {
     include ntp
     include screen
     include ssh::all
+    include sudo
 
 }
 
