@@ -1,7 +1,7 @@
 class net-chizography {
 
     # we need a web-server
-    package { nginx: ensure => latest }
+    require nginx
 
     # make sure chisel can control it
     include user-chisel
@@ -27,5 +27,11 @@ class net-chizography {
         source => [
             "puppet:///modules/net-chizography/nginx.conf-chizography.net"
         ],
+	#notify => Service["nginx"],
+    }
+
+    file { '/etc/nginx/sites-enabled/chizography.net':
+       ensure => 'link',
+       target => '/etc/nginx/sites-available/chizography.net',
     }
 }
