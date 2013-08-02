@@ -6,15 +6,9 @@ class net-chizography {
     # make sure chisel can control it
     include user-chisel
 
-    # we need somewhere for our site to live
-    file { "/opt/":
-        ensure => "directory",
-        owner  => "root",
-    }
-    file { "/opt/www/":
-        ensure => "directory",
-        owner  => "root",
-    }
+    # make sure /opt/www exists
+    require opt-www
+
     file { "/opt/www/chizography.net":
         ensure => "directory",
         owner  => "root",
