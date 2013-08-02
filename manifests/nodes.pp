@@ -27,4 +27,5 @@ node "default" inherits basenode { }
 node "droplet" inherits basenode {
     # droplet is 'chizography.net'
     include net-chizography
+    include net-chizography-tubehopper
 }
