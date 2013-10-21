@@ -1,3 +1,3 @@
 class libexpat-dev {
-    package { libexpat-dev: ensure => latest }
+    package { libexpat1-dev: ensure => latest }
 }
