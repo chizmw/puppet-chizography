@@ -7,6 +7,7 @@ node basenode {
         }
     }
 
+    include apache2-utils
     include bash-completion
     include build-essential
     include curl
@@ -15,6 +16,7 @@ node basenode {
     include libexpat-dev
     include libssl-dev
     include ntp
+    include puppet-lint
     include screen
     include ssh::all
     include sudo
@@ -28,4 +30,5 @@ node "droplet" inherits basenode {
     # droplet is 'chizography.net'
     include net-chizography
     include net-chizography-tubehopper
+    include net-kristaleksa
 }
